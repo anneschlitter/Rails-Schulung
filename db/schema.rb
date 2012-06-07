@@ -11,13 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120606141140) do
+ActiveRecord::Schema.define(:version => 20120607115657) do
 
   create_table "beam_targets", :force => true do |t|
     t.integer  "density",    :precision => 12, :scale => 0
     t.integer  "volume",     :precision => 12, :scale => 0
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
+  end
+
+  create_table "reservations", :force => true do |t|
+    t.integer  "user_id",        :precision => 12, :scale => 0, :null => false
+    t.integer  "beam_target_id", :precision => 12, :scale => 0, :null => false
+    t.datetime "date",                                          :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "lastname"
+    t.string   "firstname"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

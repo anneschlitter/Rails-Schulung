@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  User_id: 1
+  BeamTarget_id: 1
+  date: 2012-06-07 13:56:58
+
+two:
+  User_id: 1
+  BeamTarget_id: 1
+  date: 2012-06-07 13:56:58

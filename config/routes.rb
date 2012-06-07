@@ -1,4 +1,8 @@
 Oratest::Application.routes.draw do
+  resources :reservations
+
+  resources :users
+
   resources :beam_targets
   root:to => 'beam_targets#index'
 
