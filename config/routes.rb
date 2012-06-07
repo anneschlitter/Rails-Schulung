@@ -1,5 +1,6 @@
 Oratest::Application.routes.draw do
   resources :beam_targets
+  root:to => 'beam_targets#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

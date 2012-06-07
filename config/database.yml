@@ -29,8 +29,8 @@ development:
 test:
   adapter: oracle_enhanced
   database: hmiuser
-  username: evp
-  password: evp
+  username: evp_test
+  password: evp_test
 
 production:
   adapter: oracle_enhanced
